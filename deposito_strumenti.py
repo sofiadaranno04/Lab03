@@ -38,6 +38,7 @@ class DepositoStrumenti:
     def strumenti_ordinati_per_marca(self):
         """Ordina gli strumenti per marca in ordine alfabetico"""
         # TODO
+        return sorted(self.strumenti, key=lambda strumento: strumento.marca)
 
     def nuovo_prestito(self, data, id_strumento, cognome_allievo):
         """Crea un nuovo prestito"""
