@@ -1,9 +1,10 @@
+
 class Prestito:
-    def __init__(self,id_prestito,data,id_strumento,cognome_allievo):
+    def __init__(self,id_prestito,data,codiceS,cognome_studente):
      self.id_prestito = id_prestito
      self.data = data
-     self.id_strumento = id_strumento
-     self.cognome_allievo = cognome _allievo
-     def __str__(self):
-         return(f"{self.id_prestito}-Data:{self.data}-"
-                f"Strumento:{self.id_strumento}-"
+     self.codiceS = codiceS
+     self.cognome_studente = cognome_studente
+
+    def __str__(self):
+        return f"Prestito [{self.id_prestito}]: Strumento {self.codiceS} affidato a {self.cognome_studente} in data {self.data}"
